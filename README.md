@@ -11,18 +11,4 @@ data warehousing and BI consumption.
 
 ## Architecture
 
-Data Sources
-     ↓
-Azure Data Factory
-     ↓
-ADLS Gen2 - Raw Layer
-     ↓
-Azure Databricks
-     ↓
-PySpark Transformation
-     ↓
-ADLS Gen2 - Transformed Layer
-     ↓
-Azure Synapse
-     ↓
-Power BI / Tableau / Fabric
+Data Sources -> Azure Data Factory -> ADLS Gen2 - Raw Layer -> Azure Databricks -> PySpark Transformation -> ADLS Gen2 - Transformed Layer -> Azure Synapse -> Power BI / Tableau / Fabric
