@@ -1,2 +1,28 @@
-# olist-azure-data-engineering
-End-to-end Azure Data Engineering project using the Brazilian Olist e-commerce dataset. The pipeline uses Azure Data Factory for ingestion, ADLS Gen2 for lake storage, and Azure Databricks with Python, PySpark and Spark SQL for cleansing, transformation and enrichment. Transformed data is served through Azure Synapse for analytics and reporting.
+# Olist End-to-End Azure Data Engineering Project
+
+## Project Overview
+
+This project implements an end-to-end data engineering pipeline
+using the Brazilian Olist e-commerce dataset.
+
+The solution demonstrates data ingestion, data lake storage,
+distributed processing, data transformation, data enrichment,
+data warehousing and BI consumption.
+
+## Architecture
+
+Data Sources
+     ↓
+Azure Data Factory
+     ↓
+ADLS Gen2 - Raw Layer
+     ↓
+Azure Databricks
+     ↓
+PySpark Transformation
+     ↓
+ADLS Gen2 - Transformed Layer
+     ↓
+Azure Synapse
+     ↓
+Power BI / Tableau / Fabric
